@@ -1,0 +1,1006 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    .page-bd .page-section .container-max-md {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    }
+    #page-body .mobile {
+    width: 100% !important;
+    }
+    body {
+    margin: 0;
+    }
+    .main-div {
+    width: 100%;
+    font-family: "Montserrat";
+    background-color: #fff;
+    }
+    .main-div h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+    margin: 0;
+    }
+    .main-div img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    }
+    .main-div sup {
+    line-height: 0.3em;
+    }
+    :root {
+    --sns-btn-bg: #2A2A2A;
+    --sns-btn-back: #3786E3;
+    --sns-blue: #3786E3;
+    --sns-black: #000;
+    --sns-white: #fff;
+    --sns-lite-blue: #EDF1F5;
+    }
+    .s-f-44-700 {
+    font-size: 2.292vw !important;
+    font-weight: 700;
+    color: #000000;
+    }
+    .s-f-32-600 {
+    font-size: 1.667vw !important;
+    font-weight: 600;
+    color: #000000;
+    }
+    .s-f-24-500 {
+    font-size: 1.25vw !important;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.8em;
+    }
+    .s-f-22-400 {
+    font-size: 1.146vw !important;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.8em;
+    }
+    .s-f-22-600 {
+    font-size: 1.146vw !important;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.8em;
+    }
+    .s-f-22-500 {
+    font-size: 1.146vw !important;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.8em;
+    }
+    @media screen and (max-width: 890px) {
+    .s-f-44-700 {
+    font-size: clamp(28px, 2.292vw, 44px) !important;
+    }
+    .s-f-32-600 {
+    font-size: clamp(24px, 1.667vw, 32px) !important;
+    }
+    .s-f-24-500 {
+    font-size: clamp(20px, 1.25vw, 24px) !important;
+    }
+    .s-f-22-400 {
+    font-size: clamp(18px, 1.146vw, 22px) !important;
+    }
+    .s-f-22-600 {
+    font-size: clamp(18px, 1.146vw, 22px) !important;
+    }
+    .s-f-22-500 {
+    font-size: clamp(18px, 1.146vw, 22px) !important;
+    }
+    }
+    .sns-mt-1 {
+    margin-top: 1%;
+    }
+    .sns-mt-2 {
+    margin-top: 2%;
+    }
+    .sns-mt-3 {
+    margin-top: 3%;
+    }
+    .sns-mt-4 {
+    margin-top: 4%;
+    }
+    .sns-mt-5 {
+    margin-top: 5%;
+    }
+    .sns-mb-1 {
+    margin-bottom: 1%;
+    }
+    .sns-mb-2 {
+    margin-bottom: 2%;
+    }
+    .sns-mb-3 {
+    margin-bottom: 3%;
+    }
+    .sns-mb-4 {
+    margin-bottom: 4%;
+    }
+    .sns-mb-5 {
+    margin-bottom: 5%;
+    }
+    .sns-pt-1 {
+    padding-top: 1%;
+    }
+    .sns-pt-2 {
+    padding-top: 2%;
+    }
+    .sns-pt-3 {
+    padding-top: 3%;
+    }
+    .sns-pt-4 {
+    padding-top: 4%;
+    }
+    .sns-pt-5 {
+    padding-top: 5%;
+    }
+    .sns-pb-1 {
+    padding-bottom: 1%;
+    }
+    .sns-pb-2 {
+    padding-bottom: 2%;
+    }
+    .sns-pb-3 {
+    padding-bottom: 3%;
+    }
+    .sns-pb-4 {
+    padding-bottom: 4%;
+    }
+    .sns-pb-5 {
+    padding-bottom: 5%;
+    }
+    /* Custom css */
+    /* The sns-d-flex becomes flexible by setting the display property to flex */
+    .sns-d-flex {
+    display: flex;
+    }
+    /* justify-content to align the item on the main axis ,center */
+    .sns-justify-content-center {
+    justify-content: center;
+    }
+    .sns-justify-center {
+    justify-content: center;
+    }
+    /* Distribute items evenly Start, in-between, and end gaps have equal sizes */
+    .sns-justify-content-evenly {
+    justify-content: space-evenly;
+    }
+    /*Items will have space between them */
+    .sns-justify-content-space-between {
+    justify-content: space-between;
+    }
+    /*tems will have space before, between, and after them */
+    .sns-justify-content-space-around {
+    justify-content: space-around;
+    }
+    /* the align-items property to align our item on the cross axis, center*/
+    .sns-align-center {
+    align-items: center;
+    }
+    .sns-align-end {
+    align-items: end;
+    }
+    /* sets the items in row */
+    .sns-f-row {
+    flex-direction: row;
+    }
+    /* sets the items in column */
+    .sns-f-column {
+    flex-direction: column;
+    }
+    /* sns-flex-wrap property is used to specify whether flex items are forced into a single line or wrapped onto multiple lines.  */
+    .sns-flex-wrap {
+    flex-wrap: wrap;
+    }
+    /* The flexbox items are aligned at the baseline of the cross axis. */
+    .sns-basline {
+    align-items: baseline;
+    }
+    .sns-text-center {
+    text-align: center;
+    }
+    /* start */
+    .sns-desk-none {
+    display: none !important;
+    }
+    .sns-mob-none {
+    display: block !important;
+    }
+    /* End */
+    .sns-fw-100 {
+    font-weight: 100;
+    }
+    .sns-fw-200 {
+    font-weight: 200;
+    }
+    .sns-fw-300 {
+    font-weight: 300;
+    }
+    .sns-fw-400 {
+    font-weight: 400;
+    }
+    .sns-fw-500 {
+    font-weight: 500;
+    }
+    .sns-fw-600 {
+    font-weight: 600;
+    }
+    .sns-fw-700 {
+    font-weight: 700;
+    }
+    .sns-fw-800 {
+    font-weight: 800;
+    }
+    /* font-weight normal italic bold */
+    .sns-text-start {
+    text-align: left;
+    }
+    .sns-text-end {
+    text-align: right;
+    }
+    .sns-text-center {
+    text-align: center;
+    }
+    .sns-text-decoration-none {
+    text-decoration: none;
+    }
+    .sns-text-decoration-underline {
+    text-decoration: underline;
+    }
+    .sns-text-decoration-line-through {
+    text-decoration: line-through;
+    }
+    /* .text-capitalize lowercase capitalize*/
+    .sns-text-lowercase {
+    text-transform: lowercase;
+    }
+    .sns-text-uppercase {
+    text-transform: uppercase;
+    }
+    .sns-text-capitalize {
+    text-transform: capitalize;
+    }
+    .sns-text-wrap {
+    white-space: normal;
+    }
+    .sns-text-nowrap {
+    white-space: nowrap;
+    }
+    /* .text-capitalize lowercase capitalize*/
+    @media screen and (max-width: 480px) {
+    .sns-desk-none {
+    display: block !important;
+    }
+    .sns-mob-none {
+    display: none !important;
+    }
+    }
+    .s-mi-5 {
+    margin-inline: 6%;
+    }
+    .s-mi-7 {
+    margin-inline: 7%;
+    }
+    .s-mi-8 {
+    margin-inline: 8%;
+    }
+    @media screen and (max-width: 890px) {
+    .s-mi-5 {
+    margin-inline: 0%;
+    }
+    .s-mi-7 {
+    margin-inline: 0%;
+    }
+    .s-mi-8 {
+    margin-inline: 0%;
+    }
+    }
+    .bd-credit-bann {
+    position: relative;
+    }
+    .bd-credit-text {
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    text-align: center;
+    /* padding-inline: 12vw; */
+    }
+    .bd-credit-text h1 {
+    font-size: 2.917vw !important;
+    font-weight: 600;
+    color: #ffffff;
+    padding-inline: 15%;
+    }
+    @media screen and (max-width: 480px) {
+    .bd-credit-text {
+    padding-block: 5%;
+    position: initial;
+    }
+    .bd-credit-text h1 {
+    font-size: clamp(30px, 2.917vw, 56px) !important;
+    padding-inline: 5%;
+    color: #000000;
+    }
+    }
+    .sns-button>.sns-BN {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 0;
+    background-color: #EAEAEA;
+    justify-content: space-evenly;
+    }
+    .sns-BN>a {
+    color: var(--sns-white);
+    text-decoration: none !important;
+    padding: 2%;
+    }
+    .sns-BN>.sns-btn {
+    width: calc(85%/4);
+    padding: 1.2% 0;
+    box-sizing: border-box;
+    }
+    .sns-BN .sns-butn {
+    background-color: #1B1B1B;
+    color: #fff;
+    font-size: 1.35vw;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 0;
+    letter-spacing: 1px;
+    }
+    .sns-BN .sns-butn:hover {
+    background-color: #666666;
+    color: #FFFFFF;
+    }
+    @media screen and (max-width: 1200px) {}
+    @media screen and (max-width: 890px) {
+    .sns-button>.sns-BN {
+    padding: 3% 0;
+    }
+    .sns-BN>.sns-btn {
+    width: calc(91%/2);
+    padding: 1.5% 0;
+    }
+    .sns-BN .sns-butn {
+    font-size: clamp(18px, 1.25vw, 26px);
+    }
+    .sns-f-b {
+    margin-bottom: 3%;
+    }
+    }
+    @media screen and (max-width: 480px) {
+    .sns-BN>.sns-btn {
+    width: calc(89%/1);
+    margin: 3%;
+    padding-block: 4%;
+    }
+    .sns-button>.sns-BN {
+    padding: 4% 0;
+    }
+    }
+    .s-head {
+    text-align: center;
+    padding-inline: 7%;
+    }
+    .con_img {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-inline: 7% 5%;
+    /* margin-left: 2%; */
+    }
+    .con_img>.inner-w-1 {
+    width: 47%;
+    }
+    .con_img>.inner-w-2 {
+    width: 50%;
+    }
+    /* .s-mi-5 {
+    margin-inline: 5%;
+    } */
+    @media screen and (max-width: 890px) {
+    .s-head {
+    /* padding-inline: 5%; */
+    }
+    .con_img {
+    margin-inline: 7%;
+    }
+    .con_img>.inner-w-1 {
+    width: 100%;
+    }
+    .con_img>.inner-w-2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    }
+    }
+    .s-2x2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-inline: 7%;
+    /* gap: 3%; */
+    }
+    .s-2x2-inner {
+    width: calc(100%/3);
+    text-align: center;
+    }
+    .s-2x2 .img-1 {
+    width: 5em;
+    margin-inline: auto;
+    }
+    .inner-2x2-padd {
+    padding: 5% 4%;
+    }
+    .inner-2x2-padd h3 {
+    text-transform: uppercase;
+    padding-top: 3%;
+    }
+    .inner-2x2-padd p {
+    padding-top: 5%;
+    }
+    @media screen and (max-width: 890px) {
+    .s-2x2-inner {
+    width: calc(100%/2);
+    }
+    }
+    @media screen and (max-width: 480px) {
+    .s-2x2-inner {
+    width: calc(100%/1);
+    }
+    }
+    .bg-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    }
+    .bg-btn a {
+    color: #fff;
+    }
+    .bg-btn a:hover {
+    color: #fff;
+    }
+    .s-btn {
+    position: absolute;
+    /* top: 0; */
+    background: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none !important;
+    width: 22%;
+    font-size: 1.35vw;
+    font-weight: 700;
+    transition: 0.5s;
+    border-radius: 0;
+    letter-spacing: 1px;
+    padding: 1% 0;
+    left: 7%;
+    border: 2px solid #FFFFFF;
+    }
+    .s-btn:hover {
+    background-color: #666666;
+    color: #FFFFFF;
+    }
+    @media screen and (max-width: 890px) {
+    .bg-btn {
+    flex-direction: column;
+    }
+    .s-btn {
+    width: 45.5%;
+    position: initial;
+    padding: 1.5% 0;
+    background-color: #1B1B1B;
+    font-size: clamp(18px, 1.25vw, 26px);
+    margin-block: 3%;
+    border: 0px solid #FFFFFF;
+    }
+    }
+    @media screen and (max-width: 480px) {
+    .s-btn {
+    width: 90%;
+    padding-block: 4%;
+    }
+    }
+    /* This Secton was duplicated from Section 3. */
+    /* This Secton was duplicated from Section 5. */
+    .img-over-txt {
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: #fff; */
+    }
+    .s-img-txt {
+    position: absolute;
+    left: 7.5%;
+    /* top: 18%; */
+    }
+    .s-img-txt h2 {
+    margin-right: 61.8%;
+    }
+    /* @media screen and (max-width: 890px) {
+    .s-img-txt h2 {
+    margin-right: 30%;
+    }
+    } */
+    @media screen and (max-width: 890px) {
+    .s-img-txt {
+    position: initial;
+    text-align: center;
+    /* top: 18%; */
+    }
+    .img-over-txt{
+    flex-direction: column;
+    }
+    .s-img-txt h2 {
+    margin-right: 0%;
+    padding-inline: 5%;
+    padding-block: 5%;
+    }
+    }
+    /* This Secton was duplicated from Section 2. */
+    </style>
+    <div class="main-div">
+    <div class="bd-credit-bann ">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/0aa0a0c0724c4e7185bc712a6c52aaf3.png" alt="">
+    <div class="bd-credit-text">
+    <h1 class="">
+    Amazing Inventory of Used Trucks and SUVs
+    in Billings, MT
+    </h1>
+    <!-- <h1 class="sns-desk-none">The Best Used Cars in Billings,
+    MT from Rimrock Certified Select</h1> -->
+    </div>
+    </div>
+    <section class="sns-button">
+    <div class="sns-BN justify-content-evenly ">
+    <a class="sns-btn sns-butn sns-f-b" href="https://www.rimrockcertified.com/all-inventory/index.htm">
+    <div>View Inventory</div>
+    </a>
+    <a class="sns-btn sns-butn sns-f-b " href="https://www.rimrockcertified.com/promotions/service/index.htm">
+    <div>View Specials</div>
+    </a>
+    <a class="sns-btn sns-butn sns-f-b-r " href="https://www.rimrockcertified.com/financing/application.htm">
+    <div>Payment Calculator</div>
+    </a>
+    <a class="sns-btn sns-butn " href="https://www.rimrockcertified.com/instant-cash-offer.htm">
+    <div>Instant Cash Offer</div>
+    </a>
+    </div>
+    </section>
+    <div class="s-head">
+    <h2 class="s-f-44-700" style="margin-top: 6%;">Are Used Trucks and SUVs Worth Buying?</h2>
+    <p class="s-f-22-400 s-mi-5 sns-mt-3">When considering the worthiness of purchasing used trucks and SUVs,
+    particularly in a locale
+    like Billings, MT,
+    where outdoor activities are prevalent, several factors come into play. One prominent avenue for
+    prospective
+    buyers is Rimrock Certified Select, which offers a selection of reliable used trucks for sale in
+    Montana,
+    including SUVs tailored to diverse needs and preferences.</p>
+    </div>
+    <div class="con_img sns-pb-3 sns-mt-2 ">
+    <div class="inner-w-1">
+    <img class="" src="//pictures.dealer.com/r/rimrockautocredit/1234/e682a2a6646d415b854aaa2ec4e08845.png">
+    </div>
+    <div class="inner-w-2">
+    <p class="s-f-22-400">
+    Firstly, used trucks and SUVs often provide a cost-effective solution for those seeking reliable
+    transportation
+    without the premium price tag associated with brand-new vehicles. Montana, with its varied
+    landscapes and
+    demanding
+    weather conditions, requires vehicles capable of handling rough terrain and inclement weather,
+    making used
+    trucks
+    and SUVs an attractive option for residents seeking both affordability and durability.
+    </p>
+    <p class="s-f-22-400 sns-pt-3">
+    Rimrock Certified Select stands as a reputable source for pre-owned vehicles, ensuring that buyers
+    have
+    access to
+    quality options that have undergone rigorous inspections and met stringent standards. This added
+    layer of
+    assurance
+    alleviates concerns about purchasing a vehicle with hidden flaws or undisclosed issues, enhancing
+    the
+    overall value
+    proposition of used trucks and SUVs in Billings, MT.
+    </p>
+    </div>
+    </div>
+    <div class="s-head sns-mb-4">
+    <p class="s-f-22-400 s-mi-7">Another aspect to consider is the versatility offered by trucks and SUVs, which
+    are
+    well-suited for a range of
+    activities, from outdoor adventures to daily commuting and hauling tasks. In a place like Montana,
+    having a
+    vehicle
+    capable of transporting gear, navigating rough terrain, and providing ample space for passengers is
+    invaluable.
+    Used
+    trucks and SUVs fulfill these requirements admirably, making them worth considering for individuals with
+    active
+    lifestyles or specific transportation needs.</p>
+    <p class="s-f-22-400 sns-pt-2 s-mi-7">Moreover, the depreciation curve of vehicles tends to level off after
+    the initial few
+    years of
+    ownership, meaning that
+    used trucks and SUVs offer competitive value retention compared to their new counterparts. This aspect
+    is
+    particularly
+    appealing for buyers who prioritize long-term ownership and seek to minimize the financial hit
+    associated with
+    vehicle
+    depreciation.</p>
+    <p class="s-f-22-400 s-mi-7 sns-pt-2">Also, the availability of certified pre-owned options through Rimrock
+    Certified Select
+    adds an
+    extra layer of peace of
+    mind for buyers, as these vehicles come with extended warranties and additional perks that further
+    enhance their
+    value
+    proposition.</p>
+    <p class="s-f-22-400 s-mi-7 sns-pt-2">Used trucks and SUVs in Billings, MT, present a compelling option for
+    buyers seeking
+    reliable
+    transportation tailored to
+    the demands of the region. With reputable sources like Rimrock Certified Select offering a diverse
+    selection of
+    pre-owned vehicles, buyers can find options that meet their needs while offering cost-effective
+    solutions,
+    durability,
+    and versatility.</p>
+    </div>
+    <section style="background:#EAEAEA;">
+    <div class="s-head sns-pt-5 sns-pb-3">
+    <h2 class="s-f-44-700">How to Buy a Cheap Truck?</h2>
+    <p class="s-f-22-400 sns-pt-2 s-mi-8">Finding a cheap truck requires a strategic approach, especially
+    when
+    navigating the
+    world of used trucks and SUVs in
+    Billings, MT. While scouring online marketplaces and listings across Montana for used SUV and trucks
+    might
+    seem
+    tempting, prioritizing a reputable dealership like Rimrock Certified Select in Montana can offer
+    significant
+    advantages that translate to long-term savings.</p>
+    <p class="s-f-22-400 s-mi-7 sns-pt-2">Sure, private sellers can advertise enticing rock-bottom prices,
+    including
+    used
+    diesel trucks under 20k. But
+    remember, "cheap" often comes with hidden costs. Without the peace of mind that comes from a
+    professional
+    inspection and potential warranties, a seemingly cheap truck from a private seller could quickly
+    turn into a
+    money
+    pit.</p>
+    </div>
+    <div class="s-img" style="margin-inline:7%;">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/7ae98735b2da4d94b03b8294d866df61.png" alt="">
+    </div>
+    <div class="s-head">
+    <p class="s-f-22-400 s-mi-7 sns-pt-3 sns-pb-3 ">
+    Here's why prioritizing Rimrock Certified Select elevates your chances of finding a truly cheap
+    truck:
+    </p>
+    </div>
+    <div class="s-2x2">
+    <div class="s-2x2-inner">
+    <!-- <img src="//pictures.dealer.com/r/rimrockautocredit/1234/583528c8938b4966ae752e97d2c8fd62.png" alt="" class="img-1"> -->
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/52452087365d431b95043f195d828b21.png" alt="" class="img-1">
+    <div class="inner-2x2-padd">
+    <h3 class="s-f-32-600">Quality assurance</h3>
+    <p class="s-f-22-400">
+    Rimrock Certified Select meticulously inspects their used trucks and SUVs. This ensures
+    you're not
+    buying someone else's problems. They likely won't offer the absolute cheapest truck on the
+    market,
+    but you can be confident you're getting a reliable vehicle that won't need immediate
+    repairs.
+    </p>
+    </div>
+    </div>
+    <div class="s-2x2-inner">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/e6bf3d5225b34ce39e40192032cbe74d.png" alt="" class="img-1">
+    <div class="inner-2x2-padd">
+    <h3 class="s-f-32-600">Warranty options</h3>
+    <p class="s-f-22-400">
+    Many dealerships, including Rimrock Certified Select, offer warranty coverage on their used
+    vehicles. This acts as a safety net against unexpected breakdowns, potentially saving you
+    thousands
+    of dollars down the road.
+    </p>
+    </div>
+    </div>
+    <div class="s-2x2-inner">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/a86176cde75e4127a8f2d4c0aa4b772e.png" alt="" class="img-1">
+    <div class="inner-2x2-padd">
+    <h3 class="s-f-32-600">Financing options</h3>
+    <p class="s-f-22-400">
+    Dealerships like Rimrock Certified Select often have established relationships with lenders,
+    offering you a wider range of financing options than you might secure on your own. This can
+    translate to lower interest rates and manageable monthly payments, making used trucks and
+    SUVs even
+    more affordable.
+    </p>
+    </div>
+    </div>
+    </div>
+    <div class="s-head sns-pb-5">
+    <p class="s-f-22-400 sns-pt-3 s-mi-5">
+    Let's not forget the value of convenience. Instead of spending countless hours sifting through
+    online listings and
+    meeting with private sellers, Rimrock Certified Select brings a curated selection of quality used
+    trucks directly to
+    you. Their knowledgeable staff can guide you towards vehicles that fit your budget and needs, saving
+    you valuable
+    time and frustration.
+    </p>
+    <p class="s-f-22-400 sns-pt-2 s-mi-5">
+    Of course, exploring all avenues – including private sellers across Montana – is part of the
+    process. But remember,
+    the cheapest truck isn't always the most economical choice in the long run. Prioritizing Rimrock
+    Certified Select
+    gives you a good chance of finding affordable used trucks and SUVs that stay reliable for a long
+    time.
+    </p>
+    </div>
+    </section>
+    <section class="bg-btn">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/0bebfd9e51464c09bd3320be4c7d6832.png" alt="">
+    <a href="https://www.rimrockcertified.com/all-inventory/index.htm" class="s-btn">View Inventory</a>
+    </section>
+    <section style="background:#fff;">
+    <div class="s-head sns-pt-5 sns-pb-2">
+    <h2 class="s-f-44-700">Is an SUV a Truck or a Car?</h2>
+    <p class="s-f-22-400 sns-pt-2 s-mi-7">
+    SUVs occupy a unique space between cars and trucks. While both Rimrock Certified Select and other
+    dealerships
+    often
+    group them together with used trucks for sale, they possess characteristics of both.
+    </p>
+    <p class="s-f-22-400 sns-pt-2 s-mi-7">
+    Traditionally, SUVs were built on truck chassis, offering off-road prowess similar to trucks. Think
+    rugged
+    vehicles like
+    Jeeps, designed to tackle tough terrain. Today's SUVs come in a wider variety, with some retaining
+    strong
+    off-road
+    capabilities and others prioritizing comfort and passenger space, blurring the lines with cars.
+    </p>
+    </div>
+    <div class="s-img" style="margin-inline:7%;">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/c363f2fe441b411eb4d74c9a4c5b355c.png" alt="">
+    </div>
+    <div class="s-head sns-pb-4">
+    <p class="s-f-22-400 sns-pt-3  s-mi-5">
+    So, are they trucks? Not entirely. Modern SUVs typically lack the heavy-duty towing capacity and
+    open truck
+    bed of a
+    traditional pickup. However, some larger SUVs can still tow a significant amount and might be
+    suitable for
+    occasional hauling needs.
+    </p>
+    <p class="s-f-22-400 sns-pt-2 s-mi-5">
+    Are they cars? Again, not quite. SUVs tend to be larger and heavier than most cars, offering a
+    higher
+    seating
+    position and more cargo space. This translates to a less car-like driving experience.
+    </p>
+    <p class="s-f-22-400 sns-pt-2 s-mi-7">
+    Ultimately, SUVs are a versatile blend. If you're in Montana and considering a 4WD diesel truck for
+    sale for
+    serious
+    off-roading, then a true truck might be the better option. But if you prioritize passenger comfort,
+    cargo
+    space, and
+    occasional off-road capability, then an SUV could be the perfect middle ground. Rimrock Certified
+    Select
+    likely has
+    a healthy stock of both used trucks and SUVs to explore, allowing you to find the vehicle that best
+    suits
+    your needs
+    and driving style.
+    </p>
+    </div>
+    </section>
+    <section style="background:#FBFBFB;">
+    <div class="s-head sns-pt-5">
+    <h2 class="s-f-44-700">Are Used SUVs and Trucks Better Than Cars?</h2>
+    <p class="s-f-22-400 sns-pt-3 s-mi-7">
+    The debate over whether trucks are better than cars is subjective and largely depends on individual
+    needs,
+    preferences, and lifestyle. Both vehicles have their own set of advantages and drawbacks, making it
+    essential to consider various factors when determining which option is better suited to specific
+    circumstances.
+    </p>
+    </div>
+    <div class="con_img sns-pb-3 sns-mt-2 ">
+    <div class="inner-w-1">
+    <img class="" src="//pictures.dealer.com/r/rimrockautocredit/1234/3effe6e9681c4972bd099721d121cf63.png">
+    </div>
+    <div class="inner-w-2">
+    <p class="s-f-22-400">
+    Trucks, renowned for their versatility and ruggedness, offer several advantages over cars that
+    appeal to
+    a wide
+    range of consumers. One prominent benefit is their towing and hauling capabilities, which far
+    surpass
+    those of
+    cars. Whether it's transporting large equipment, towing trailers, or hauling heavy loads, trucks
+    excel
+    in tasks
+    that would be impractical or impossible for most cars. This aspect is particularly appealing to
+    individuals who
+    require a vehicle capable of handling demanding work or recreational activities.
+    </p>
+    <p class="s-f-22-400 sns-pt-3">
+    Moreover, trucks often feature robust drivetrains and chassis, making them well-suited for
+    navigating
+    rough
+    terrain and adverse weather conditions. This capability is especially valuable in regions like
+    Montana,
+    where
+    challenging landscapes and inclement weather are common. Consequently, used trucks for sale in
+    Billings,
+    Montana
+    are highly sought after by residents who prioritize durability and reliability in their
+    vehicles.
+    </p>
+    </div>
+    </div>
+    <div class="s-head sns-pb-4">
+    <p class="s-f-22-400 s-mi-7">
+    Also, trucks typically offer greater ground clearance and suspension travel than cars, allowing them
+    to
+    traverse
+    uneven surfaces with ease. This off-road prowess appeals to outdoor enthusiasts and adventurers who
+    enjoy
+    exploring
+    rugged terrain or embarking on off-road excursions. (Instead of googling “used SUVs and trucks for
+    sale near
+    me”,
+    head over to Rimrock Certified Select in Billings, MT and explore their impressive lineup of used
+    vehicles
+    in
+    person!)
+    </p>
+    <p class="s-f-22-400 s-mi-7 sns-pt-2">
+    On the other hand, cars have their own set of advantages that make them appealing to certain
+    individuals.
+    Cars are
+    generally more fuel-efficient than trucks, making them a more economical choice for daily commuting
+    and
+    long-distance travel. Additionally, cars typically offer better handling and maneuverability, making
+    them
+    easier to
+    navigate in congested urban environments or tight parking spaces.
+    </p>
+    <p class="s-f-22-400 s-mi-7 sns-pt-2">
+    Too, cars often provide a smoother and more comfortable ride than trucks, thanks to their lower
+    center of
+    gravity
+    and more refined suspension systems. This aspect is particularly important for passengers who
+    prioritize
+    comfort and
+    ride quality during their travels.
+    </p>
+    <p class="s-f-22-400 s-mi-7 sns-pt-2">
+    Ultimately, the decision between trucks and cars comes down to personal preferences, lifestyle, and
+    intended
+    use.
+    While trucks excel in towing, hauling, and off-road capabilities, cars offer superior fuel
+    efficiency,
+    handling, and
+    comfort. Whether browsing for used trucks and SUVs or considering options for cars, consumers have a
+    diverse
+    range
+    of vehicles to choose from at Rimrock Certified Select in Billings, Montana!
+    </p>
+    </div>
+    <section class="bg-btn">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/2783abe2fd2246aa85b590d8ff74e1c2.png" alt="">
+    <a href="https://www.rimrockcertified.com/promotions/service/index.htm" class="s-btn">View Specials</a>
+    </section>
+    <div class="img-over-txt">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/46cceef484064d25a3813391548fa0e6.png" alt="">
+    <div class="s-img-txt">
+    <h2 class="s-f-44-700 s-mi-31"> Get the Best Used Trucks and SUVs in Billings, MT from Rimrock
+    Certified
+    Select!</h2>
+    </div>
+    </div>
+    <section style="background:#fff;">
+    <div class="s-head sns-pt-5 sns-pb-2">
+    <p class="s-f-22-400 s-mi-7">
+    Are you in the market for a reliable and high-quality used truck or SUV? Look no further than
+    Rimrock
+    Certified
+    Select in Billings, MT. Our dealership offers an unparalleled selection of used trucks for sale
+    in Montana,
+    ensuring
+    that you'll find the perfect vehicle to suit your needs and budget.
+    </p>
+    <p class="s-f-22-400 sns-pt-2 s-mi-7">
+    At Rimrock Certified Select, we pride ourselves on providing top-notch customer service and a
+    diverse
+    inventory of
+    SUV and trucks for sale. Whether you're in search of a rugged 4WD diesel truck for off-road
+    adventures or a
+    versatile SUV for your daily commute, we have something for everyone.
+    </p>
+    </div>
+    <div class="s-img" style="margin-inline:7%;">
+    <img src="//pictures.dealer.com/r/rimrockautocredit/1234/a69a156ab67442c2a92de455a76bc3af.png" alt="">
+    </div>
+    <div class="s-head sns-pb-4">
+    <p class="s-f-22-400 s-mi-5 sns-pt-3">
+    One of the standout features of our dealership is our commitment to affordability. We understand
+    that
+    purchasing a
+    vehicle is a significant investment, which is why we offer a range of diesel trucks under 20k.
+    With these
+    budget-friendly options, you can rest assured that you're getting excellent value without
+    sacrificing
+    quality or
+    performance.
+    </p>
+    <p class="s-f-22-400 s-mi-7 sns-pt-2">
+    Additionally, our team of knowledgeable sales professionals is here to assist you every step of
+    the way.
+    Whether you
+    have questions about our inventory, financing options, or vehicle history reports, we're here to
+    provide the
+    information you need to make an informed decision.
+    </p>
+    <p class="s-f-22-400 s-mi-7 sns-pt-2">
+    Our dealership is also committed to transparency and integrity in all of our dealings. When you
+    shop with
+    us, you
+    can trust that each vehicle has undergone a thorough inspection and meets our rigorous standards
+    for quality
+    and
+    reliability.
+    </p>
+    <p class="s-f-22-600 s-mi-7 sns-pt-2" style="font-style: italic;">
+    So why wait? Visit Rimrock Certified Select and discover why we're the premier destination for
+    used trucks
+    and SUVs
+    in Billings, Montana. With our extensive selection, affordable pricing, and exceptional customer
+    service,
+    you'll
+    find the perfect vehicle to suit your lifestyle and budget. Come see us and drive home in the
+    truck or SUV
+    of your
+    dreams!
+    </p>
+    </div>
+    </section>
+    <section class="sns-button">
+    <div class="sns-BN justify-content-evenly ">
+    <a class="sns-btn sns-butn sns-f-b" href="https://www.rimrockcertified.com/all-inventory/index.htm">
+    <div>View Inventory</div>
+    </a>
+    <a class="sns-btn sns-butn sns-f-b " href="https://www.rimrockcertified.com/promotions/service/index.htm">
+    <div>View Specials</div>
+    </a>
+    <a class="sns-btn sns-butn sns-f-b-r " href="https://www.rimrockcertified.com/financing/application.htm">
+    <div>Payment Calculator</div>
+    </a>
+    <a class="sns-btn sns-butn " href="https://www.rimrockcertified.com/instant-cash-offer.htm">
+    <div>Instant Cash Offer</div>
+    </a>
+    </div>
+    </section>
+    </section></div>

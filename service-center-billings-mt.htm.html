@@ -1,0 +1,1063 @@
+<style>
+  /* Write your master css here */
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+  .page-bd .page-section .container-max-md {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  /* 
+  body {
+    margin: 0;
+  } */
+
+  .main-div {
+    width: 100%;
+    font-family: "Montserrat";
+    background-color: #fff;
+  }
+
+  .main-div img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  .main-div sup {
+    line-height: 0.3em;
+  }
+
+  :root {
+    --sns-btn-bg: #2a2a2a;
+    --sns-btn-back: #3786e3;
+    --sns-blue: #3786e3;
+    --sns-black: #000;
+    --sns-white: #fff;
+    --sns-lite-blue: #edf1f5;
+  }
+
+  .sns-f-56 {
+    font-size: 2.917vw !important;
+    font-weight: 600;
+    color: #000 !important;
+  }
+
+  .sns-f-44 {
+    font-size: 2.292vw !important;
+    font-weight: 700;
+    color: #000 !important;
+  }
+
+  .sns-f-32 {
+    font-size: 1.667vw !important;
+    font-weight: 600;
+    color: #000 !important;
+  }
+
+  .sns-f-26 {
+    font-size: 1.354vw !important;
+    font-weight: 600;
+    color: #000 !important;
+  }
+
+  .sns-f-24 {
+    font-size: 1.25vw !important;
+    font-weight: 600;
+    color: #000 !important;
+  }
+
+  .sns-f-22 {
+    font-size: 1.146vw !important;
+    font-weight: 400;
+    line-height: 2em;
+    color: #000 !important;
+  }
+
+  @media screen and (max-width: 890px) {
+    .sns-f-56 {
+      font-size: clamp(40px, 2.917vw, 56px) !important;
+    }
+
+    .sns-f-48 {
+      font-size: clamp(40px, 2.95vw, 48px) !important;
+    }
+
+    .sns-f-44 {
+      font-size: clamp(27px, 2.292vw, 44px) !important;
+    }
+
+    .sns-f-36-fw-600 {
+      font-size: clamp(30px, 1.875vw, 36px) !important;
+    }
+
+    .sns-f-36-fw-700 {
+      font-size: clamp(30px, 1.875vw, 36px) !important;
+    }
+
+    .sns-f-32 {
+      font-size: clamp(27px, 1.667vw, 32px) !important;
+    }
+    .sns-f-30 {
+      font-size: clamp(25px, 1.563vw, 30px) !important;
+    }
+
+    .sns-f-24 {
+      font-size: clamp(20px, 1.25vw, 24px) !important;
+    }
+
+    .sns-f-20 {
+      font-size: clamp(16px, 1.042vw, 20px) !important;
+    }
+
+    .sns-f-22 {
+      font-size: clamp(18px, 1.472vw, 22px) !important;
+      margin-top: 5% !important;
+    }
+
+    .sns-f-head-26 {
+      font-size: clamp(20px, 1.354vw, 26px) !important;
+    }
+
+    .sns-f-26 {
+      font-size: clamp(20px, 1.354vw, 26px) !important;
+    }
+
+    .sns-f-26-msrp {
+      font-size: clamp(20px, 1.354vw, 26px) !important;
+    }
+  }
+
+  .sns-mt-1 {
+    margin-top: 1%;
+  }
+
+  .sns-mt-2 {
+    margin-top: 2%;
+  }
+
+  .sns-mt-3 {
+    margin-top: 3%;
+  }
+
+  .sns-mt-4 {
+    margin-top: 4%;
+  }
+
+  .sns-mt-5 {
+    margin-top: 5%;
+  }
+
+  .sns-mb-1 {
+    margin-bottom: 1%;
+  }
+
+  .sns-mb-2 {
+    margin-bottom: 2%;
+  }
+
+  .sns-mb-3 {
+    margin-bottom: 3%;
+  }
+
+  .sns-mb-4 {
+    margin-bottom: 4%;
+  }
+
+  .sns-mb-5 {
+    margin-bottom: 5%;
+  }
+
+  .sns-pt-1 {
+    padding-top: 1%;
+  }
+
+  .sns-pt-2 {
+    padding-top: 2%;
+  }
+
+  .sns-pt-3 {
+    padding-top: 3%;
+  }
+
+  .sns-pt-4 {
+    padding-top: 4%;
+  }
+
+  .sns-pt-5 {
+    padding-top: 5%;
+  }
+
+  .sns-pb-1 {
+    padding-bottom: 1%;
+  }
+
+  .sns-pb-2 {
+    padding-bottom: 2%;
+  }
+
+  .sns-pb-3 {
+    padding-bottom: 3%;
+  }
+
+  .sns-pb-4 {
+    padding-bottom: 4%;
+  }
+
+  .sns-pb-5 {
+    padding-bottom: 5%;
+  }
+
+  /* Custom css */
+
+  /* The sns-d-flex becomes flexible by setting the display property to flex */
+  .sns-d-flex {
+    display: flex;
+  }
+
+  /* justify-content to align the item on the main axis ,center */
+  .sns-justify-content-center {
+    justify-content: center;
+  }
+
+  .sns-justify-center {
+    justify-content: center;
+  }
+
+  /* Distribute items evenly Start, in-between, and end gaps have equal sizes */
+  .sns-justify-content-evenly {
+    justify-content: space-evenly;
+  }
+
+  /*Items will have space between them */
+  .sns-justify-content-space-between {
+    justify-content: space-between;
+  }
+
+  /*tems will have space before, between, and after them */
+  .sns-justify-content-space-around {
+    justify-content: space-around;
+  }
+
+  /* the align-items property to align our item on the cross axis, center*/
+  .sns-align-center {
+    align-items: center;
+  }
+
+  .sns-align-end {
+    align-items: end;
+  }
+
+  /* sets the items in row */
+  .sns-f-row {
+    flex-direction: row;
+  }
+
+  /* sets the items in column */
+  .sns-f-column {
+    flex-direction: column;
+  }
+
+  /* sns-flex-wrap property is used to specify whether flex items are forced into a single line or wrapped onto multiple lines.  */
+  .sns-flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  /* The flexbox items are aligned at the baseline of the cross axis. */
+  .sns-basline {
+    align-items: baseline;
+  }
+
+  .sns-text-center {
+    text-align: center;
+  }
+
+  .sns-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  /* start */
+  .sns-desk-none {
+    display: none !important;
+  }
+
+  .sns-mob-none {
+    display: block !important;
+  }
+
+  /* End */
+
+  .sns-fw-100 {
+    font-weight: 100;
+  }
+
+  .sns-fw-200 {
+    font-weight: 200;
+  }
+
+  .sns-fw-300 {
+    font-weight: 300;
+  }
+
+  .sns-fw-400 {
+    font-weight: 400;
+  }
+
+  .sns-fw-500 {
+    font-weight: 500;
+  }
+
+  .sns-fw-600 {
+    font-weight: 600;
+  }
+
+  .sns-fw-700 {
+    font-weight: 700;
+  }
+
+  .sns-fw-800 {
+    font-weight: 800;
+  }
+
+  /* font-weight normal italic bold */
+
+  .sns-text-start {
+    text-align: left;
+  }
+
+  .sns-text-end {
+    text-align: right;
+  }
+
+  .sns-text-center {
+    text-align: center;
+  }
+
+  .sns-text-decoration-none {
+    text-decoration: none;
+  }
+
+  .sns-text-decoration-underline {
+    text-decoration: underline;
+  }
+
+  .sns-text-decoration-line-through {
+    text-decoration: line-through;
+  }
+
+  /* .text-capitalize lowercase capitalize*/
+
+  .sns-text-lowercase {
+    text-transform: lowercase;
+  }
+
+  .sns-text-uppercase {
+    text-transform: uppercase;
+  }
+
+  .sns-text-capitalize {
+    text-transform: capitalize;
+  }
+
+  .sns-text-wrap {
+    white-space: normal;
+  }
+
+  .sns-text-nowrap {
+    white-space: nowrap;
+  }
+
+  /* .text-capitalize lowercase capitalize*/
+
+  @media screen and (max-width: 480px) {
+    .sns-desk-none {
+      display: block !important;
+    }
+
+    .sns-mob-none {
+      display: none !important;
+    }
+  }
+
+  .bd-credit-bann {
+    position: relative;
+  }
+
+  .bd-credit-text {
+    position: absolute;
+    bottom: 3.5%;
+    width: 100%;
+    text-align: center;
+    /* padding-inline: 12vw; */
+  }
+
+  .bd-credit-text h1 {
+    font-size: 2.917vw !important;
+    font-weight: 600;
+    color: #000000;
+    padding-inline: 25vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    .bd-credit-text {
+      padding-top: 3%;
+      position: initial;
+    }
+
+    .bd-credit-text h1 {
+      font-size: clamp(30px, 2.917vw, 56px) !important;
+      padding-inline: 5vw;
+      margin-block: 4% 5%;
+    }
+  }
+
+  .sns-button > .sns-BN {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 0;
+    background-color: #eaeaea;
+    justify-content: space-evenly;
+  }
+
+  .sns-BN > a {
+    color: var(--sns-white);
+    text-decoration: none !important;
+    padding: 2%;
+  }
+
+  .sns-BN > .sns-btn {
+    width: calc(85% / 4);
+    padding: 1.2% 0;
+    box-sizing: border-box;
+  }
+
+  .sns-BN .sns-butn {
+    background-color: #1b1b1b;
+    color: #fff;
+    font-size: 1.35vw;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 0;
+    letter-spacing: 1px;
+  }
+
+  .sns-BN .sns-butn:hover {
+    background-color: #666666;
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 1200px) {
+  }
+
+  @media screen and (max-width: 890px) {
+    .sns-button > .sns-BN {
+      padding: 3% 0;
+    }
+
+    .sns-BN > .sns-btn {
+      width: calc(91% / 2);
+      padding: 1.5% 0;
+    }
+
+    .sns-BN .sns-butn {
+      font-size: clamp(16px, 1.25vw, 24px);
+    }
+
+    .sns-f-b {
+      margin-bottom: 3%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .sns-BN > .sns-btn {
+      width: calc(89% / 1);
+      margin: 3%;
+      padding-block: 6%;
+    }
+
+    .sns-button > .sns-BN {
+      padding: 4% 0;
+    }
+  }
+
+  .con_img {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .H-T {
+    padding-top: 3%;
+  }
+
+  .con_img .s-div {
+    width: calc(88% / 2) !important;
+  }
+
+  .s-img {
+    width: 40% !important;
+  }
+
+  .s-text {
+    width: 52% !important;
+  }
+
+  .con_img .s-div h3 {
+    margin-top: 3%;
+  }
+
+  .con_img .s-div p {
+    margin-top: 3%;
+    /* margin-bottom: 3%; */
+  }
+
+  .pd-r-5 {
+    padding-right: 0%;
+  }
+
+  .sns-mar-14 {
+    margin-inline: 12.5vw;
+  }
+  .sns-mar-19 {
+    margin-inline: 19vw;
+  }
+
+  @media screen and (max-width: 890px) {
+    .con_img .s-div {
+      width: calc(94% / 1) !important;
+    }
+
+    .pd-r-5 {
+      padding-right: unset;
+    }
+
+    .sns-mar-14 {
+      margin-inline: 3vw;
+    }
+
+    .sns-mar-19 {
+      margin-inline: 5vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .s-div {
+      text-align: center;
+    }
+
+    .H-T {
+      margin-top: 20%;
+    }
+
+    .sns-mar-14 {
+      margin-inline: 3vw;
+    }
+    .sns-mar-19 {
+      margin-inline: 3vw;
+    }
+  }
+
+  /* This Secton was duplicated from Section 3. */
+  .sns-2x2 {
+    gap: 2.5%;
+    padding-top: 1.5%;
+  }
+
+  .sns-with-gap-2x2 {
+    width: calc(92.5% / 2);
+    margin-bottom: 1.2%;
+  }
+
+  .border_p h3 {
+    text-transform: uppercase;
+    margin-block: 5%;
+  }
+
+  .sns-1x1x {
+    width: 95% !important;
+  }
+
+  .mr-in-5 {
+    margin-inline: 5.5%;
+  }
+
+  @media screen and (max-width: 670px) {
+    .sns-with-gap-2x2 {
+      width: calc(94% / 1);
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .mr-in-5 {
+      margin-inline: 3.5%;
+    }
+
+    .sns-2x2 {
+      gap: 2.5%;
+      padding-top: 3%;
+    }
+  }
+
+  /* This Secton was duplicated from Section 2. */
+
+  .s-seo {
+    padding: 2% 3%;
+  }
+
+  .s-seo p {
+    margin-bottom: 1.5%;
+    line-height: 1.3em;
+  }
+
+  @media screen and (max-width: 890px) {
+    .s-seo {
+      padding: 5% 5%;
+    }
+
+    .s-seo p {
+      margin-bottom: 3%;
+      line-height: 1.3em;
+    }
+  }
+</style>
+
+<div class="main-div">
+  <div class="bd-credit-bann">
+    <img
+      src="https://pictures.dealer.com/r/rimrockautocredit/1234/42491c93f00745e0a802630037772548.png"
+      alt=""
+    />
+    <div class="bd-credit-text">
+      <h1>Visit the Best Car Service Center in Billings, MT</h1>
+    </div>
+  </div>
+
+  <section class="sns-button">
+    <div class="sns-BN justify-content-evenly">
+      <a
+        class="sns-btn sns-butn sns-f-b"
+        href="https://www.rimrockcertified.com/all-inventory/index.htm"
+      >
+        <div>View Inventory</div>
+      </a>
+      <a
+        class="sns-btn sns-butn sns-f-b"
+        href="https://www.rimrockcertified.com/certified-select-specials.htm"
+      >
+        <div>View Specials</div>
+      </a>
+      <a
+        class="sns-btn sns-butn sns-f-b-r"
+        href="https://secure.vinmanagersites.com/FinanceApplication.aspx"
+      >
+        <div>Payment Calculator</div>
+      </a>
+      <a
+        class="sns-btn sns-butn"
+        href="https://www.rimrockcertified.com/instant-cash-offer.htm"
+      >
+        <div>Instant Cash Offer</div>
+      </a>
+    </div>
+  </section>
+
+  <div class="sns-f-44 sns-text-center sns-pt-5 sns-mar-19">
+    Why Do You Need a Reputable Car Service Center for an Automotive Service?
+  </div>
+
+  <div
+    class="sns-text-center sns-mt-2 sns-mar-14"
+    style="background-color: #ffffff"
+  >
+    <div class="sns-f-22 sns-mt-3 sns-text-center">
+      aking your car to just any car service center might seem convenient, but
+      when it comes to the overall health and safety of your vehicle, choosing a
+      reputable establishment makes a world of difference. This is where Rimrock
+      Certified Select in Billings, MT comes in. Their excellent service
+      department offers a multitude of benefits that go far beyond a simple oil
+      change.
+    </div>
+    <div class="sns-f-22 sns-mt-2 sns-text-center">
+      Reputable car service centers, like Rimrock Certified Select in Montana,
+      prioritize high-quality repairs. Their technicians are not only
+      experienced and qualified, but also stay up-to-date on the latest
+      advancements in automotive service technology. This ensures they can
+      accurately diagnose and fix any issue your car might have, using the
+      correct parts and techniques. Subpar service centers, on the other hand,
+      might employ less qualified mechanics who could misdiagnose problems,
+      leading to unnecessary repairs or, worse, improper fixes that could cause
+      further damage down the road.
+    </div>
+  </div>
+
+  <div class="con_img sns-mt-2">
+    <div class="s-div s-img">
+      <img
+        class=""
+        src="https://pictures.dealer.com/r/rimrockautocredit/1234/8a071e270c5342528116f6819e18103b.png"
+      />
+    </div>
+    <div class="s-div s-text">
+      <p class="sns-f-22 pd-r-5" style="font-weight: 400">
+        Rimrock Certified Select, a certified service center, understand the
+        importance of preventative maintenance. A scheduled service appointment
+        isn't just about fixing what's broken; it's about identifying potential
+        problems before they become major issues. Through inspections and
+        routine car maintenance procedures, mechanics can catch minor wear and
+        tear early on, preventing them from snowballing into expensive repairs.
+        This proactive automotive service saves you money in the long run and
+        keeps your car running smoothly and safely.
+      </p>
+      <p class="sns-f-22 sns-pt-2 pd-r-5" style="font-weight: 400">
+        Trustworthiness is another key advantage of using a reputable car
+        service center. At Rimrock Certified Select in Montana, you can expect
+        transparent communication from their excellent service department.
+        They'll explain the repairs needed, the estimated costs involved, and
+        obtain your approval before proceeding. This eliminates the worry of
+        hidden fees or unnecessary work being done on your car.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="Cont-mid sns-text-center sns-mt-2 sns-mb-2 sns-mar-14 sns-mb-5"
+    style="background-color: #ffffff"
+  >
+    <div class="sns-f-22 sns-mt-3 sns-text-center">
+      Building a relationship with a trusted car service center, like Rimrock
+      Certified Select, goes a long way in ensuring the longevity and
+      performance of your vehicle. Just like a doctor for your body, a reputable
+      car service center becomes familiar with your car's specific needs and
+      maintenance history. This allows them to create a personalized service
+      plan that addresses your car's unique requirements, maximizing its
+      lifespan and fuel efficiency.
+    </div>
+
+    <div class="sns-f-22 sns-mt-2 sns-text-center">
+      While a quick oil change at any corner shop might seem appealing,
+      sacrificing quality for convenience can cost you more in the long run. A
+      reputable car service center, like Rimrock Certified Select in Billings,
+      MT, offers a multitude of benefits. From high-quality repairs and
+      preventative maintenance to transparent communication and building trust,
+      they ensure your car receives the expert care it deserves, keeping you
+      safe and on the road for miles to come.
+    </div>
+  </div>
+
+  <div class="sns-mt-3 sns-pb-1" style="background-color: #eaeaea">
+    <div class="sns-f-44 sns-text-center sns-pt-5 sns-mb-2 sns-mar-19">
+      How Often Do You Need to Take Your Vehicle to
+      <span style="white-space: nowrap">a Car</span> Service Center?
+    </div>
+    <div class="sns-f-22 sns-text-center sns-mb-3 sns-mar-14">
+      Regular maintenance is essential to keep your vehicle running smoothly and
+      reliably. Knowing how often to take your vehicle to a car service center
+      ensures that it stays in top condition for years to come. At Rimrock
+      Certified Select in Billings, MT, their excellent service department
+      recommends a schedule for servicing your vehicle based on several factors.
+    </div>
+
+    <div class="mr-in-5 img5">
+      <div class="img5-c">
+        <img
+          src="https://pictures.dealer.com/r/rimrockautocredit/1234/2b6ef62087ec432080249b36a251b092.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="sns-f-22 sns-text-center sns-mt-3 sns-mar-14">
+      One crucial aspect to consider is the manufacturer's recommendations
+      outlined in your vehicle's owner's manual. This document provides valuable
+      insights into the recommended service intervals for various components of
+      your vehicle. Rimrock Certified Select in Billings, MT emphasizes the
+      importance of adhering to these guidelines to maintain your vehicle's
+      warranty and ensure optimal performance.
+    </div>
+    <div class="sns-f-22 sns-text-center sns-mt-2 sns-mar-14">
+      Additionally, factors such as your driving habits, environmental
+      conditions, and the age of your vehicle can influence how often you should
+      service your vehicle. For example, if you frequently drive in stop-and-go
+      traffic or harsh weather conditions, your vehicle may require more
+      frequent servicing to address wear and tear on essential components.
+    </div>
+    <div class="sns-f-22 sns-text-center sns-mt-2 sns-mar-14 sns-mb-2">
+      Another key consideration is the type of service needed for your vehicle.
+      Routine car maintenance tasks such as oil changes, tire rotations, and
+      fluid checks should be performed regularly to prevent premature wear and
+      extend the lifespan of your vehicle. Rimrock Certified Select in Montana
+      recommends scheduling these automotive services according to the
+      manufacturer's guidelines to maintain your vehicle's performance and
+      efficiency.
+    </div>
+
+    <div class="mr-in-5 img5">
+      <div class="img5-c">
+        <img
+          src="https://pictures.dealer.com/r/rimrockautocredit/1234/79959754d673409393c9f25646ba55bc.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="sns-f-22 sns-text-center sns-mt-3 sns-mar-14">
+      In addition to routine car maintenance, it's essential to address any
+      signs of trouble promptly. Strange noises, unusual vibrations, or warning
+      lights on your dashboard may indicate underlying issues that require
+      attention from a qualified technician. Ignoring these warning signs can
+      lead to more extensive and costly repairs down the road.
+    </div>
+    <div class="sns-f-22 sns-text-center sns-mt-2 sns-mar-14">
+      Rimrock Certified Select in Montana advises vehicle owners to consider
+      seasonal maintenance to prepare their vehicles for changing weather
+      conditions. From inspecting your vehicle's cooling system before the
+      summer months to ensuring your battery is in good condition for the
+      winter, seasonal maintenance helps prevent breakdowns and ensures your
+      vehicle operates smoothly year-round.
+    </div>
+    <div class="sns-f-22 sns-text-center sns-mt-2 sns-mar-14 sns-mb-3">
+      Ultimately, the frequency of servicing your vehicle depends on a
+      combination of factors, including manufacturer recommendations, driving
+      habits, environmental conditions, and the age of your vehicle. By
+      following these guidelines and scheduling regular service appointments at
+      a reputable car service center like Rimrock Certified Select, you can
+      maintain your vehicle's performance, reliability, and resale value for
+      years to come.
+    </div>
+  </div>
+
+  <div class="sns-f-44 sns-text-center sns-pt-5 sns-mar-19">
+    What Happens If You Ignore a Routine Car Maintenance?
+  </div>
+  <div class="sns-mar-14 sns-text-center sns-mt-2 sns-mb-2">
+    <div class="sns-f-22 sns-mt-3 sns-text-center">
+      Ignoring routine car maintenance can have serious consequences for both
+      your vehicle's performance and your safety on the road. At Rimrock
+      Certified Select in Billings, MT, their excellent service department
+      emphasizes the importance of regular maintenance to prevent potential
+      issues and ensure your vehicle's longevity.
+    </div>
+    <div class="sns-f-22 sns-mt-2 sns-text-center">
+      One of the most immediate consequences of ignoring routine car maintenance
+      is the risk of breakdowns and mechanical failures. Components such as the
+      engine, transmission, and brakes require regular inspections and servicing
+      to detect any signs of wear or damage. Without proper maintenance, these
+      critical systems are more susceptible to failure, leading to unexpected
+      breakdowns and potentially dangerous situations on the road.
+    </div>
+  </div>
+  <div class="con_img sns-mt-4">
+    <div class="s-div s-img">
+      <img
+        class=""
+        src="https://pictures.dealer.com/r/rimrockautocredit/1234/1e75f80b007e4504b94175fbb23f14f3.png"
+      />
+    </div>
+    <div class="s-div s-text">
+      <p class="sns-f-22 pd-r-5" style="font-weight: 400">
+        Neglecting routine car maintenance can result in decreased fuel
+        efficiency and increased emissions. Dirty air filters, worn spark plugs,
+        and improperly inflated tires can all contribute to reduced fuel economy
+        and increased pollution. By servicing your vehicle regularly at a
+        reputable car service center like Rimrock Certified Select, you can
+        ensure that your vehicle operates efficiently and meets emissions
+        standards.
+      </p>
+      <p class="sns-f-22 sns-pt-2 pd-r-5" style="font-weight: 400">
+        Ignoring routine car maintenance can also lead to more extensive and
+        costly repairs in the long run. Small issues that could have been
+        addressed during routine maintenance appointments can escalate into
+        larger problems if left unchecked. For example, a minor oil leak can
+        lead to engine damage if not repaired promptly, resulting in costly
+        repairs or even engine replacement.
+      </p>
+    </div>
+  </div>
+  <div
+    class="sns-mar-14 Cont-mid sns-text-center sns-mt-2 sns-mb-5"
+    style="background-color: #ffffff"
+  >
+    <div class="sns-f-22 sns-mt-3 sns-text-center">
+      In addition to mechanical issues, neglecting routine maintenance can
+      affect your vehicle's safety systems. Components such as brakes, tires,
+      and suspension play a crucial role in your vehicle's ability to handle and
+      stop safely. Without regular inspections and servicing, these systems may
+      degrade over time, compromising your vehicle's safety and putting you and
+      your passengers at risk.
+    </div>
+    <div class="sns-f-22 sns-mt-2 sns-text-center">
+      Also, ignoring routine car maintenance can void your vehicle's warranty
+      and reduce its resale value. Most warranties require that you adhere to a
+      regular maintenance schedule outlined in the owner's manual. Failure to
+      service your vehicle according to these guidelines can result in warranty
+      claims being denied. Additionally, a well-maintained vehicle typically
+      commands a higher resale value than one with a spotty service history.
+    </div>
+    <div class="sns-f-22 sns-mt-2 sns-text-center">
+      Lastly, neglecting routine car maintenance can affect your peace of mind
+      and overall driving experience. Knowing that your vehicle is properly
+      maintained and in good condition provides a sense of confidence and
+      security on the road. Conversely, driving a vehicle that has been
+      neglected may lead to anxiety and stress, as you worry about potential
+      breakdowns or safety issues.
+    </div>
+  </div>
+
+  <div
+    class=""
+    style="
+      background: linear-gradient(
+        180deg,
+        rgba(251, 251, 251, 1) 84%,
+        rgba(255, 255, 255, 1) 84%
+      );
+    "
+  >
+    <div class="sns-f-44 sns-text-center sns-pt-5 sns-mar-19">
+      Bring Your Car to the Best Automotive Service Center in Billings, MT!
+    </div>
+    <div class="sns-text-center sns-mt-2 sns-mb-2 sns-mar-14">
+      <div class="sns-f-22 sns-mt-3 sns-text-center">
+        Is your car due for some TLC? Looking for a car service center in
+        Billings, MT that goes beyond the ordinary oil change? Then look no
+        further than Rimrock Certified Select in Montana! We're not just another
+        service center; we're your one-stop shop for all your automotive service
+        needs, offering an exceptional experience from the moment you pull into
+        our lot.
+      </div>
+    </div>
+    <div class="sns-d-flex sns-justify-center sns-2x2 sns-flex-wrap mr-in-5">
+      <div class="sns-with-gap-2x2 sns-text-center">
+        <img
+          src="https://pictures.dealer.com/r/rimrockautocredit/1234/a5c3ef95b39d402ea258b95025cdb00b.png"
+          alt="Experience the Rimrock Certified Select Difference"
+        />
+        <div class="border_p">
+          <h3 class="sns-f-32 sec5-padd-b-c">
+            Experience the Rimrock Certified Select Difference
+          </h3>
+          <p class="sns-f-22">
+            At Rimrock Certified Select, we understand that your car is more
+            than just a mode of transportation. It's your trusted companion on
+            countless journeys, and you deserve to have complete peace of mind
+            knowing it's running smoothly and safely. That's why we've built our
+            reputation on providing top-notch automotive service, delivered by a
+            team of passionate and highly skilled technicians.
+          </p>
+        </div>
+      </div>
+      <div class="sns-with-gap-2x2 sns-text-center">
+        <img
+          src="https://pictures.dealer.com/r/rimrockautocredit/1234/60a43adb4e63484caac40af82db0f1ec.png"
+          alt="Unparalleled Expertise"
+        />
+        <div class="border_p">
+          <h3 class="sns-f-32 sec5-padd-b-c">Unparalleled Expertise</h3>
+          <p class="sns-f-22">
+            Our excellent service department is a cornerstone of Rimrock
+            Certified Select. Our technicians are not only factory-trained and
+            certified, but also stay up-to-date on the latest advancements in
+            automotive technology. This ensures they can diagnose any issue with
+            precision, using the most advanced tools and techniques to get your
+            car back on the road in top condition. Whether it's a routine oil
+            change, a complex repair, or anything in between, our team has the
+            expertise to handle it all.
+          </p>
+        </div>
+      </div>
+      <div class="sns-with-gap-2x2 sns-text-center">
+        <img
+          src="https://pictures.dealer.com/r/rimrockautocredit/1234/f2bbb1168b164a3ba9608bd830546863.png"
+          alt="Transparency and Trust"
+        />
+        <div class="border_p">
+          <h3 class="sns-f-32 sec5-padd-b-c">Transparency and Trust</h3>
+          <p class="sns-f-22">
+            We believe in building trust with our customers. That's why we
+            prioritize clear communication throughout the service process. Our
+            service advisors will explain any recommended repairs in detail,
+            providing you with a transparent breakdown of costs and options
+            before any work begins. You'll never be surprised by hidden fees or
+            unnecessary services at Rimrock Certified Select in Montana.
+          </p>
+        </div>
+      </div>
+      <div class="sns-with-gap-2x2 sns-text-center">
+        <img
+          src="https://pictures.dealer.com/r/rimrockautocredit/1234/2357c9db32ea47f4b244dc48fde75124.png"
+          alt="Preventative Care for a Long and Happy Car Life"
+        />
+        <div class="border_p">
+          <h3 class="sns-f-32 sec5-padd-b-c">
+            Preventative Care for a Long and Happy Car Life
+          </h3>
+          <p class="sns-f-22">
+            We go beyond fixing problems; we help prevent them. Regular service
+            appointments at Rimrock Certified Select are essential for
+            maintaining your car's optimal health. Our technicians will perform
+            thorough inspections, identify potential issues early on, and
+            recommend preventative maintenance to keep your car running smoothly
+            and efficiently for years to come.
+          </p>
+        </div>
+      </div>
+      <div class="sns-with-gap-2x2 sns-1x1x sns-text-center">
+        <img
+          src="https://pictures.dealer.com/r/rimrockautocredit/1234/e17f8a637e7a4c368e3580b5905286ce.png"
+          alt="Join the Rimrock Certified Select Family"
+        />
+        <div class="">
+          <h3 class="sns-f-32 sns-mt-2" style="text-transform: uppercase">
+            Join the Rimrock Certified Select Family
+          </h3>
+          <p class="sns-f-22 sns-mt-2">
+            When you entrust your car to Rimrock Certified Select for an
+            automotive service, you're joining a family. We're committed to
+            providing exceptional customer service and building long-term
+            relationships with our clients. Our friendly and professional staff
+            is always happy to answer your questions and address any concerns
+            you may have.
+          </p>
+        </div>
+      </div>
+      <div class="sns-text-center sns-mb-5 sns-mar-14">
+        <div class="sns-f-22 sns-mt-2 sns-text-center" style="font-weight: 700">
+          So, don't settle for an average car service. Give your car the care it
+          deserves at Rimrock Certified Select, the best car service center in
+          Billings, MT!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="sns-button">
+    <div class="sns-BN justify-content-evenly">
+      <a
+        class="sns-btn sns-butn sns-f-b"
+        href="https://www.rimrockcertified.com/all-inventory/index.htm"
+      >
+        <div>View Inventory</div>
+      </a>
+      <a
+        class="sns-btn sns-butn sns-f-b"
+        href="https://www.rimrockcertified.com/certified-select-specials.htm"
+      >
+        <div>View Specials</div>
+      </a>
+      <a
+        class="sns-btn sns-butn sns-f-b-r"
+        href="https://secure.vinmanagersites.com/FinanceApplication.aspx"
+      >
+        <div>Payment Calculator</div>
+      </a>
+      <a
+        class="sns-btn sns-butn"
+        href="https://www.rimrockcertified.com/instant-cash-offer.htm"
+      >
+        <div>Instant Cash Offer</div>
+      </a>
+    </div>
+  </section>
+</div>
